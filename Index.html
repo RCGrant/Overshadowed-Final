@@ -122,19 +122,19 @@ window.checkAnswer1 = function() {
   if (correctAnswers.includes(userAnswer)) {
   Engine.play("You dont know");
      } else {
-        document.getElementById("feedback1").textContent = "Incorrect, try again.";
+        document.getElementById("feedback1").textContent = "Think along the lines of 'paycheck to paycheck'.";
     }
 };    
     
 
   window.checkAnswer2 = function() {
     var userAnswer = document.getElementById("answerBox2").value.trim().toLowerCase();
-   var correctAnswers = ["woman", "a woman", "women"];
+   var correctAnswers = ["woman", "a woman", "women", "female"];
 
   if (correctAnswers.includes(userAnswer)) {
   Engine.play("Too vague");
      } else {
-        document.getElementById("feedback2").textContent = "Incorrect, try again.";
+        document.getElementById("feedback2").textContent = "Think gender.";
     }
 };
     
@@ -155,12 +155,12 @@ window.checkAnswer3 = function() {
   
 window.checkAnswer4 = function() {
     var userAnswer = document.getElementById("answerBox4").value.trim().toLowerCase();
-   var correctAnswers = ["homelessness", "sleeping rough"];
+   var correctAnswers = ["homelessness", "homeless"];
 
   if (correctAnswers.includes(userAnswer)) {
   Engine.play("Last chance");
      } else {
-        document.getElementById("feedback4").textContent = "Incorrect, try again.";
+        document.getElementById("feedback4").textContent = "Something no one should experience.";
     }    
 };
 
